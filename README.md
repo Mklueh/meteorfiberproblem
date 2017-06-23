@@ -1,1 +1,1 @@
-Meteor Fiber Problem
+Meteor Fiber problem occurs when trying to access a collection
