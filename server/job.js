@@ -12,39 +12,18 @@ export default class Job {
                     new FirstTask().run(callback)
                 },
                 function (callback) {
-                    Meteor.bindEnvironment(function (err, res) {
-                        new SecondTask().run(callback);
-                    }, function () {
-                        console.log('Failed to bind environment');
-                    })
+                    new SecondTask().run(callback);
                 },
                 function (callback) {
-                    Meteor.bindEnvironment(function (err, res) {
-                        new ThirdTask().run(callback);
-                    }, function () {
-                        console.log('Failed to bind environment');
-                    })
+                    new ThirdTask().run(callback);
                 },
                 function (callback) {
-                    Meteor.bindEnvironment(function (err, res) {
-                        new FourthTask().run(callback);
-                    }, function () {
-                        console.log('Failed to bind environment');
-                    })
+                    new FourthTask().run(callback);
                 },
             ],
             function (err, results) {
                 console.log(err, results);
             }
         )
-
-        /*
-
-         Meteor.bindEnvironment(function (err, res) {
-         // do stuff
-         // can access Meteor.userId
-         // still have MongoDB write fence
-         }, function () { console.log('Failed to bind environment'); })
-         */
     }
 };
