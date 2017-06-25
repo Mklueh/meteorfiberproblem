@@ -14,6 +14,6 @@ export default class FourthTask extends Task {
          * @type {any}
          */
         let result = MyCollection.findOne();
-        console.log("Third task", result)
+        console.log("Fourth task", result)
     }
 };
