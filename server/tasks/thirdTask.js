@@ -1,6 +1,6 @@
 let Task = require('./task');
 const fs = require("fs-extra");
-export default class CopyTask extends Task {
+export default class ThirdTask extends Task {
 
     constructor(name) {
         super(name);
