@@ -1,7 +1,7 @@
 let Task = require('./task');
 import MyCollection from "/imports/api/collections/mycollection.js";
 
-export default class ThirdTask extends Task {
+export default class FourthTask extends Task {
 
     constructor(name) {
         super(name);
